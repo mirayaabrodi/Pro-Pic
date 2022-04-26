@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-weight: 400;
+	font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+a {
+	list-style: none;
+	text-decoration: none;
+	color: #1d1d1f;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.6;
+	color: #666666;
+}
+
+h1 {
+	font-size: 2.8125rem;
+	font-weight: 400;
+	color: #1D1D1F;
+}
+
+h2 {
+	font-size: 1.25rem;
+	font-weight: 400;
+	color: #5773B1;
+}
+
+hr {
+	border-bottom: none;
+	width: 10%;
+	margin: 15px auto;
+}
+
+.text-primary {
+	color: #5773B1;
+}
+
+/* Navbar */
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+  align-items: center;
+	width: 100%;
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: 600;
+	margin-left: 20px;
+	color: #1D1D1F;
+}
+
+ul {
+	display: flex;
+}
+
+.navbar a,
+.navbar li {
+	text-decoration: none;
+	padding: 10px 12px;
+}
+
+.navbar a:hover {
+	color: #abb4b9;
+	transition: all 0.2s ease;
+}
+
+/* Header */
+
+.flex-images {
+
+text-align: center;
+margin-top: 100px;
+
+}
+
+.flex-images img {
+width: 20%;
+box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+margin: 100px 50px 0 50px;
+}
+
+.flex-paragraph {
+display: flex;
+flex-direction: row;
+font-weight: 600;
+font-variant: small-caps;
+text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+font-size: 1.2rem;
+margin-bottom: 100px;
+
+	
+
+}
+
+.flex-paragraph .p-1 {
+margin-left: 15%;
+color: #1d1d1f;
+}
+
+.flex-paragraph .p-2 {
+margin-left: 23%;
+color: #1d1d1f;
+
+}
+
+.flex-paragraph .p-3 {
+margin-left: 24%;
+color: #1d1d1f;
+
+}
+
+
+
+
+/* Footer */
+
+.footer {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 1.25rem;
+	flex-direction: column;
+	margin-bottom: 25px;
+}
+
+.footer a {
+	color: #1d1d1f;
+	font-size: 1.5625rem;
+	padding: 0 20px;
+}
+
+.footer .copyright {
+	font-size: 1.125rem;
+	padding-top: 25px;
+	color: #1D1D1F;
+}
+.footer .copyright .bold {
+	font-weight: 600;
+}
+
+.footer a:hover {
+	color: #abb4b9;
+	transition: all 0.2s ease;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+@media (max-width: 950px) and (min-width: 300px) {
+	/*Navbar*/
+	
+	.navbar {
+		display: flex;
+		flex-direction: column;
+		margin: 10px auto;
+		text-align: center;
+		justify-content: center;
+		position: relative;
+	}
+
+
+	.logo {
+		font-weight: 500;
+		color: #1d1d1f;
+	}
+
+	ul {
+		display: flex;
+		padding: 10px;
+	}
+
+	.navbar a,
+	.navbar li {
+		padding: 0 5px;
+	}
+
+
+/* Header */
+
+.flex-images {
+
+	text-align: center;
+	margin-top: 150px;
+
+}
+
+.flex-images img {
+	width: 30%;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+	margin: 100px 2px 0 2px;
+
+}
+
+
+
+.flex-paragraph {
+	display: flex;
+	flex-direction: row;
+	font-weight: 600;
+	font-variant: small-caps;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+font-size: 0.95rem;
+
+		
+	
+}
+
+.flex-paragraph .p-1 {
+	margin-left: 5%;
+	font-size: 0.95rem;
+	color: #1d1d1f;
+}
+
+.flex-paragraph .p-2 {
+	margin-left: 26%;
+	font-size: 0.95rem;
+	color: #1d1d1f;
+	
+}
+
+.flex-paragraph .p-3 {
+	margin-left: 29%;
+	font-size: 0.95rem;
+	color: #1d1d1f;
+
+}
+
+	/*Footer*/
+
+	.footer {
+		margin-top: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	
+		
+	}
+
+	.footer a {
+		color: #1d1d1f;
+		padding: 0 10px;
+		font-size: 1.3rem;
+	
+	
+	}
+
+	.footer .copyright {
+		font-size: 1rem;
+		margin-top: 10px;
+		color: #1d1d1f;
+	}
+	.footer .copyright .bold {
+		font-weight: 600;
+	}
+
+	.current-1 {
+		color: #abb4b9;
+		font-weight: bold;
+	}
+
+}
+
+
+
+
